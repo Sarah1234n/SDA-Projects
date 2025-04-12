@@ -43,4 +43,3 @@ jobs:
           --name CustomScript \
           --force-update \
           --publisher Microsoft.Azure.Extensions \
-          --settings '{"commandToExecute": "/home/azureuser/chatbot/SDA-Projects/update_app.sh"}'
