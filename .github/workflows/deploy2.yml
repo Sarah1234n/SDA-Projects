@@ -14,12 +14,19 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
+    # List files in the repository for debugging purposes
+    - name: List files in the repository
+      run: |
+        ls -R  # عرض هيكل المجلدات والملفات
+
     # Set up Python environment
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.9'
         cache: 'pip'  # caching pip dependencies
+
+    # Install dependencies using requirements.txt
     - run: |
         pip install -r requirements4.txt
 
@@ -43,3 +50,4 @@ jobs:
           --name CustomScript \
           --force-update \
           --publisher Microsoft.Azure.Extensions \
+          --settings '{"commandToExecute": "/home/azureuser/chatbot/SDA-Projects/update_app.sh"}'
