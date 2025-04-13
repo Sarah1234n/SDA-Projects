@@ -1,4 +1,4 @@
-#!/bin/bash
+\#!/bin/bash
 set -e
 
 date
@@ -19,7 +19,7 @@ fi
 
 # Activate virtual environment and install requirements
 VENV_PATH="$APP_DIR/venv/bin/activate"
-REQ_FILE="$APP_DIR/requirements4.txt"
+REQ_FILE="$APP_DIR/requirements.txt"
 
 if [ -f "$VENV_PATH" ]; then
     echo "Activating virtual environment and installing requirements..."
