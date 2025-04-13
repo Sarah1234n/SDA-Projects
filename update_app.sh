@@ -4,7 +4,7 @@ set -e
 date
 echo "Updating Python application on VM..."
 
-APP_DIR="/home/azureuser/SDA-Projects"
+APP_DIR="/home/azureuser/chatbot/SDA-Projects"
 GIT_REPO="github.com/Sarah1234n/SDA-Projects.git"
 BRANCH="master"  # غيّرها إذا الفرع غير
 
