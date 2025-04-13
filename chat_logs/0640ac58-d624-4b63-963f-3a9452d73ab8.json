@@ -1,0 +1,10 @@
+[
+    {
+        "role": "user",
+        "content": "what is the file about"
+    },
+    {
+        "role": "assistant",
+        "content": "The file is about an application procedure for an entry visa to the Kingdom of Saudi Arabia. It includes details about travel information, the name and address of the company or individual inviting the traveler, and a declaration to abide by the laws and regulations of Saudi Arabia and respect Islamic customs."
+    }
+]
