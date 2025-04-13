@@ -42,7 +42,7 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      # Deploy: Run update script on the VM
+      # Deploy: Run update script on
       - name: Deploy to Azure VM
         run: |
           az vm extension set \
