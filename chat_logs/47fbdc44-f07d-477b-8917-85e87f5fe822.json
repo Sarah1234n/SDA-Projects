@@ -1,0 +1,10 @@
+[
+    {
+        "role": "user",
+        "content": "what is this pdf is about"
+    },
+    {
+        "role": "assistant",
+        "content": "The PDF is likely an application form for an entry visa to the Kingdom of Saudi Arabia. It includes declarations and agreements regarding providing true information, following the laws and customs of Saudi Arabia, and refraining from banned items or behavior. Applicants must agree to these terms to apply for a visa to the country."
+    }
+]

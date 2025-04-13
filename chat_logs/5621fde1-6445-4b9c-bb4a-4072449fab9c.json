@@ -1,0 +1,10 @@
+[
+    {
+        "role": "user",
+        "content": "what is this"
+    },
+    {
+        "role": "assistant",
+        "content": "This is a document related to a visa application for entry into the Kingdom of Saudi Arabia, including details like travel information, acknowledgment of the accuracy of information provided, compliance with Saudi laws, and undertaking to provide biometric data like fingerprints and iris pattern images. If you have specific questions about the content, feel free to ask."
+    }
+]
