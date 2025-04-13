@@ -50,4 +50,4 @@ jobs:
             --vm-name "${{ secrets.VM_NAME }}" \
             --name CustomScript \
             --publisher Microsoft.Azure.Extensions \
-            --settings '{"commandToExecute": "bash /home/azureuser/chatbot/SDA-Projects/update_app.sh"}'
+            --settings '{"commandToExecute": "bash /home/azureuser/SDA-Projects/update_app.sh"}'
