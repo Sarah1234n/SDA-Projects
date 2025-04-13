@@ -10,44 +10,44 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Checkout the repository
-    - name: Checkout code
-      uses: actions/checkout@v4
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    # List files in the repository (debug)
-    - name: List files in the repository
-      run: |
-        ls -R
+      # List files in the repository (debug)
+      - name: List files in the repository
+        run: |
+          ls -R
 
-    # Set up Python
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.9'
-        cache: 'pip'
+      # Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+          cache: 'pip'
 
-    # Install dependencies
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
-        
-    # Placeholder for running tests
-    - name: Run tests
-      run: |
-        echo "No tests defined yet."
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
 
-    # Azure Login
-    - name: Azure Login
-      uses: azure/login@v2.2.0
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+      # Placeholder for running tests
+      - name: Run tests
+        run: |
+          echo "No tests defined yet."
 
-    # Deploy: Run update script on the VM
-    - name: Deploy to Azure VM
-      run: |
-        az vm extension set \
-          --resource-group "${{ secrets.RESOURCE_GROUP }}" \
-          --vm-name "${{ secrets.VM_NAME }}" \
-          --name CustomScript \
-          --publisher Microsoft.Azure.Extensions \
-          --settings '{"commandToExecute": "bash /home/azureuser/chatbot/SDA-Projects/update_app.sh"}'
+      # Azure Login
+      - name: Azure Login
+        uses: azure/login@v2.2.0
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      # Deploy: Run update script on the VM
+      - name: Deploy to Azure VM
+        run: |
+          az vm extension set \
+            --resource-group "${{ secrets.RESOURCE_GROUP }}" \
+            --vm-name "${{ secrets.VM_NAME }}" \
+            --name CustomScript \
+            --publisher Microsoft.Azure.Extensions \
+            --settings '{"commandToExecute": "bash /home/azureuser/chatbot/SDA-Projects/update_app.sh"}'
