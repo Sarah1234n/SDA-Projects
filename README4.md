@@ -1,4 +1,4 @@
-# SDA-bootcamp-project
+# SDA-bootcamp-project-sarah
 
 Stage 4 - **RAG** Chatbot with Chat history
 
